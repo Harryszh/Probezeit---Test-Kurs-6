@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>emojis</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <p>Home</p>
+        <p>Give Feedback</p>
+        <p>Contact</p>
+        <P>Disabled</P>
+    </nav>
+
+    <div>
+        <div class="emojis" id="emojis">
+            <img src="bilder/start.jpeg" alt="startBild" width="360" height="360">
+        </div>
+        
+        <div class="button">
+            <button onclick="bildWechseln()">good!</button>
+            <button>bad!</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-logo">
+            <a href="https://www.instagram.com/">
+                <img src="bilder/Download.jpeg" alt="insta" width="60" height="60">
+            </a>
+            <a href="https://www.facebook.com">
+                <img src="bilder/Download (1).jpeg" alt="facebook" width="60" height="60">
+            </a>
+        </div>
+    </footer>
+
+    <script>
+        function bildWechseln() {
+            var bild = document.getElementById('emojis').getElementsByTagName('img')[0];
+            var neuesBild = "bilder/top.jpeg";
+            bild.src = neuesBild;
+            bild.alt = "bild 2";
+        }
+    </script>
+</body>
+</html>
