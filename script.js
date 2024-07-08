@@ -14,3 +14,17 @@ function resetPage() {
     bild.src = "images/neutral.svg";
     bild.alt = "neutral";
 }
+
+function showFeedback(type) {
+    var feedbackText = document.getElementById("feedback-text");
+    var feedbackMessage = document.getElementById("feedback-message");
+
+    if (type === 'gut') {
+        feedbackMessage.textContent = "Danke vielmals, freut mich das zu hören!";
+    } else if (type === 'schlecht') {
+        feedbackMessage.textContent = "Oh nein, tut mir leid das zu hören!";
+    }
+
+    feedbackText.style.display = "block";
+}
+
