@@ -9,20 +9,20 @@
 <body>
 <main>  
     <nav class="navbar">
-        <p>Home</p>
+        <p onclick="resetPage()">Home</p>
         <p>Give Feedback</p>
         <p>Contact</p>
-        <P>Disabled</P>
+        <p onclick="resetPage()">Disabled</p>
     </nav>
 
     <div class="container">
         <div class="emojis" id="emojis">
-            <img src="images/neutral.svg" alt="neutral" width="360" height="360">
+            <img src="images/neutral.svg" alt="neutral" width="360" height="360" id="emoji-img">
         </div>
         
         <div class="button">
-            <button class="good-button" onclick = "bildWechseln('gut')">good!</button>
-            <button class="bad-button" onclick = "bildWechseln('schlecht')">bad!</button>
+            <button class="good-button" onclick="bildWechseln('gut')">good!</button>
+            <button class="bad-button" onclick="bildWechseln('schlecht')">bad!</button>
         </div>
     </div>
 
@@ -30,7 +30,7 @@
     
     <footer>
         <div>
-            <p>C Harrys Dev Ent Gmbh</p>
+            <p>(C) 2024 Harrys Dev Ent Gmbh</p>
         </div>
 
         <div class="footer-logo">
@@ -46,3 +46,4 @@
   
 </body>
 </html>
+

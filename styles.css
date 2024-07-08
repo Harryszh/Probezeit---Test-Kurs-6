@@ -1,4 +1,7 @@
-
+body {
+    margin: 0;
+    padding: 0;
+}
 
 .navbar{
     display: flex;
@@ -8,8 +11,10 @@
     padding: 30px;
     background-color: #1E90FF;
     height: 36px;
-    
-   
+}
+
+.navbar p {
+    cursor: pointer;
 }
 
 .button{
@@ -65,9 +70,8 @@ footer {
     align-items: center;
     gap: 25px;
     padding-right: 25px;
- 
-    
 }
+
 
 
  
