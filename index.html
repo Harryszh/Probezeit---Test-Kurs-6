@@ -21,11 +21,12 @@
         </div>
         
         <div class="button">
-            <button onclick = "bildWechseln('gut')">good!</button>
-            <button onclick = "bildWechseln('schlecht')">bad!</button>
+            <button class="good-button" onclick = "bildWechseln('gut')">good!</button>
+            <button class="bad-button" onclick = "bildWechseln('schlecht')">bad!</button>
         </div>
     </div>
-</main> 
+
+    <script src="script.js"></script>
     
     <footer>
         <div>
@@ -41,21 +42,7 @@
             </a>
         </div>
     </footer>
-
-    <script>
-         function bildWechseln(bildTyp) {
-            var bild = document.getElementById('emojis').getElementsByTagName('img')[0];
-            if (bildTyp === 'gut') {
-                bild.src = "images/glücklich.svg";
-                bild.alt = "Glückliches Bild";
-            } 
-            
-            else if (bildTyp === 'schlecht') {
-                bild.src = "images/traurig.svg";
-                bild.alt = "Trauriges Bild";
-            }
-        }
-        
-    </script>
+</main> 
+  
 </body>
 </html>

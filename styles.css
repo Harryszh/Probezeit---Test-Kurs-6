@@ -1,3 +1,5 @@
+
+
 .navbar{
     display: flex;
     flex-direction: row;
@@ -6,6 +8,7 @@
     padding: 30px;
     background-color: #1E90FF;
     height: 36px;
+    
    
 }
 
@@ -16,15 +19,28 @@
     align-items: center;
     gap: 25px;
     margin-top: 36px;
+}
+.button .good-button {
+    background-color: rgb(23, 184, 23);
+    color: azure;
+    width: 76px;
+    height: 66px;
+    border-radius: 5px;
+    font-size: 26px;
+}
 
+.button .bad-button{
+    background-color: red;
+    color: azure;
+    width: 76px;
+    height: 66px;
+    border-radius: 5px;
+    font-size: 26px;
 }
 
 .container {
     margin-top: 100px;
 }
-
-
-
 
 .emojis{
     display: flex;
@@ -40,7 +56,6 @@ footer {
     padding-left: 25px;
     height: 70px;
     margin-top: 200px;
-
 }
 
 .footer-logo{
@@ -50,6 +65,7 @@ footer {
     align-items: center;
     gap: 25px;
     padding-right: 25px;
+ 
     
 }
 
